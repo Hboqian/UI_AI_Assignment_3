@@ -71,12 +71,14 @@ def add_item():
     global todo_list_data
     name_and_tasks = request.get_json()
     
+    # print(todo_list_data)
     for name, tasks in name_and_tasks.items():
         # print(name, tasks)
         for i in range(len(todo_list_data)):
             if list(todo_list_data[i].keys())[0] == name:
                 todo_list_data[i][name] = tasks
                 break
+    # print(todo_list_data)
 
     return {
         'success' : True
@@ -196,20 +198,20 @@ def api_announcements():
 def api_announcements_index(index=0):
     global annnouncements_data
 
-    return jsonify(data=annnouncements_data[index])
+    return jsonify(data=annnouncements_data[int(index)])
 
 @app.route('/api/todo', methods=['GET'])
 def api_todo():
     global todo_list_data
 
-    return jsonify(data=annnouncements_data)
+    return jsonify(data=todo_list_data)
 
 @app.route('/api/todo/<index>', methods=['GET'])
 def api_todo_index(index=0):
     #This returns, based on alphebatical ordering, the person on <index>. For example, index = 1 would return the second person alphabetically sorted.
     global todo_list_data
 
-    return jsonify(data=annnouncements_data[index])
+    return jsonify(data=todo_list_data[int(index)])
 
 if __name__ == '__main__':
    app.run(debug = True)

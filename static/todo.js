@@ -202,6 +202,31 @@ function handleAssignButtonClick(){
         item_dates[task_input] = date_input
         // localStorage.setItem("teammate_items", JSON.stringify(teammate_items))
         // localStorage.setItem("item_dates", JSON.stringify(item_dates))
+        let task_and_date = [{
+            'task' : task_input,
+            'date' : date_input
+        }]
+        
+        
+        let send_data = {}
+        send_data[teammate] = task_and_date
+        
+        $.ajax({
+            type: "POST",
+            url: "add_item",
+            dataType : "json",
+            contentType: "application/json; charset=utf-8",
+            data : JSON.stringify(send_data),
+            success: function() {
+                console.debug("Adding Item was a success")
+            },
+            error: function(request, status, error) {
+                console.error(error)
+                console.debug(request)
+                console.debug(status)
+            }
+        });
+
     }
     else{
 
@@ -541,6 +566,7 @@ $(document).ready(function(){
         contentType: "application/json; charset=utf-8",
         success: function(res){
             console.debug("Successful Retrieval of Data")
+            console.debug(res)
             updateGlobalVariables(res)   
             updateOptions()
             updateTasks()
