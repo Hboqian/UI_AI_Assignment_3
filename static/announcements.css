@@ -38,3 +38,35 @@
 .announcement-body {
     display: block;
 }
+
+ul {
+    list-style-type: none;
+    margin-top:1em;
+    margin-left: 30em;
+    margin-right: 30em;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: center;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+body{
+    font-family: Arial;
+    font-size: 1em;
+    margin: 0
+}

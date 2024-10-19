@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link to CSS -->
+        <link rel="stylesheet" type="text/css" href="../static/todo_style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="../static/todo.js"></script>
+    </head>
+    <body>
+        <nav> 
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/announcements">Announcements</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="main_heading">
+                To-Do List
+            </div> 
+            <div class="row">
+                <input class='text_input' type ='text' placeholder="Teammate name">
+                <button class="add">
+                    Add
+                </button>
+            </div>
+            <div class="row">
+                <select id="select">
+                    <option value="default">
+                        Assign to
+                    </option>
+                </select>
+                <input class="task_input" type="text" placeholder="Task">
+                <input class="date_input" type="text" placeholder="09/01/2009">
+                <button class="assign">
+                    Assign
+                </button>
+            </div>
+            <hr>
+            <div class="placeholder_center">
+                No Tasks right now. Please add a teammate and assign a task.
+            </div>
+            <hr>
+            <div class="center">
+                <button class="clear_completed">
+                    Clear Completed
+                </button>
+                <button class="reset">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

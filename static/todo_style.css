@@ -1,0 +1,163 @@
+body{
+    background-color: #f4f4f4;
+    font-family: Arial;
+    font-size: 1em;
+    margin: 0
+}
+
+button{
+    border: 0cap;   
+    color: white;
+    font-size: 0.81em;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    padding:0.4em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+select{
+    margin:0.3em;
+    width: 10em;
+}
+
+.first_row{
+    display: block;
+}
+
+.placeholder_center{
+    margin:2.5em;
+    justify-content: center;
+    text-align: center;
+    color:#8f8f8f
+}
+
+.center{
+    margin:auto;
+    width:fit-content;
+    justify-content: center;
+}
+
+.right{
+    float: right;
+}
+
+.text_input{
+    width: 52em;
+    margin:0.3em;
+    padding: 0.5em;
+}
+
+.task_input{
+    margin:0.3em;
+    width: 30.5em;
+    padding: 0.5em;
+}
+
+.date_input{
+    margin:0.3em;
+    width: 8em;
+    padding: 0.7em;
+
+}
+
+.container{
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 50em;
+    border-radius: 10px;
+    box-shadow:0.1px 0.1px 10px 0.1px;
+    padding:2em;
+    padding-bottom:1em;
+}
+
+.task{
+    margin:0.1em;
+    padding:1em;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.task_strike_through{
+    text-decoration:line-through;
+    margin:0.1em;
+    padding:1em;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.main_heading{
+    margin: 1em;
+    font-size: 2em;   
+    font-weight:bold;
+    text-align: center;
+}
+
+.second_heading{
+    text-align: center;
+    font-size: 1.17em;
+    font-weight:bold;
+}
+
+.add{
+    width:5em;
+    height:2.5em;
+    background-color: #007bff;
+}
+
+.add:hover{
+    background-color: #0056b3;
+}
+
+.assign{
+    width:5em;
+    height:2.5em;
+    background-color: #007bff;
+}
+
+.assign:hover{
+    background-color: #0056b3;
+}
+
+.clear_completed{
+    background-color: #64d05e;
+}
+
+.clear_completed:hover{
+    background-color: #4ea649;
+}
+
+.reset{
+    background-color: #c3c3c3;
+}
+
+.reset:hover{
+    background-color: #8f8f8f;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    margin-left: 30em;
+    margin-right: 30em;
+    padding : 0px;
+    place-content: center;
+}
+
+li {
+float: center;
+}
+
+li a {
+display: block;
+color: white;   
+text-align: center;
+padding: 17px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
